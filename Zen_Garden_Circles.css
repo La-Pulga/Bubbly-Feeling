@@ -1,0 +1,226 @@
+
+@font-face {
+	font-family: 'JuliusSansOne';
+	src: url(JuliusSansOne-Regular.ttf);
+}
+
+body {
+	width: 100%;
+	margin: auto;
+	background-color: #f9f9f9;
+	font-family: 'Libre Baskerville', sans-serif;
+	}
+
+h2 {
+	text-align: center;
+	font-size: 1.6em;
+	display: inline-block;
+	margin-left: 25%;
+	font-family: 'JuliusSansOne', sans-serif;
+	font-style: italic
+}
+
+
+h1 {
+	display: inline-block;
+	font-size: 1.2em;
+	font-family: 'JuliusSansOne', sans-serif;
+
+}
+
+h3 {
+	font-family: 'JuliusSansOne', sans-serif;
+}
+.summary {
+	padding-bottom: 40px;
+	font-size: 0.9em;
+	text-align: center;
+	text-indent: 0;
+}
+
+/*********************Article layout*********************/
+::-webkit-scrollbar {
+	display: none;
+}
+
+.preamble, .explanation, .benefits, .participation, .requirements {
+	transition:  all .8s ease-in-out;
+	z-index: 3;
+}
+
+.preamble, .explanation, .benefits, .participation, .requirements p {
+	font-size: 90%;
+}
+
+.requirements:hover, .explanation:hover, .participation:hover, .benefits:hover {
+  transform: rotate(360deg);
+  padding-top: 20px;
+  width: 300px;
+  height: 300px;
+  z-index: 3;
+}
+
+.requirements:hover, .explanation:hover, .participation:hover, .benefits:hover h3 {
+	text-align: center;
+}
+
+.preamble {
+	display: inline-block;
+	position: absolute;
+	margin-left: 400px;
+	margin-top: 100px;
+	width: 23%;
+	background-repeat: no-repeat;
+	background-image: radial-gradient(#F9f372, orange);
+	background-size: 100%;
+	border-radius: 50%;
+	border: 3px solid #A66300;
+	padding: 50px 50px 40px 70px;
+}	
+
+.explanation {
+	display: inline-block;
+	position: absolute;
+	margin-left: 780px;
+	margin-top: -60px;
+	width: 200px;
+	height: 210px;
+	overflow: hidden;
+	overflow-y: scroll;
+	background-repeat: no-repeat;
+	background-image: radial-gradient(#b072f9, #552781);
+	background-size: 100%;
+	border-radius: 50%;
+	border: 3px solid #360570;
+	padding: 20px 20px 20px 50px;
+}
+
+.participation {
+	display: inline-block;
+	position: absolute;
+	margin-left: 70px;
+	margin-top: 40px;
+	overflow: hidden;
+	overflow-y: scroll;
+	width: 150px;
+	height: 160px;
+	overflow: hidden;
+	overflow-y: scroll;
+	background-repeat: no-repeat;
+	background-image: radial-gradient(#bcf972, #7AB02C);
+	background-size: 100%;
+	border-radius: 50%;
+	border: 3px solid #5A9800;
+	border-radius: 50%;
+	padding: 20px 20px 20px 50px;
+}
+
+
+.benefits {
+	display: inline-block;
+	position: absolute;
+	margin-left: 920px;
+	margin-top: 300px;
+	width: 20%;
+	width: 100px;
+	height: 110px;
+	overflow: hidden;
+	overflow-y: scroll;
+	background-repeat: no-repeat;
+	background-image: radial-gradient(#bcf972, #7AB02C);
+	background-size: 100%;
+	border-radius: 50%;
+	border: 3px solid #5A9800;
+	padding: 20px 10px 20px 50px;
+}
+
+.requirements {
+	display: inline-block;
+	position: absolute;
+	margin-top: 470px;
+	margin-left: 220px;
+	overflow: hidden;
+	overflow-y: scroll;
+	width: 170px;
+	height: 180px;
+	overflow: hidden;
+	overflow-y: scroll;
+	background-color: #f372f9; 
+	background-size: 100px 100px;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-image: radial-gradient(#f372f9, #A1285F);
+	background-size: 100%;
+	border: 3px solid #8B003F;
+	padding: 20px 20px 20px 50px;
+}
+
+
+/************FOOTER AT THE BOTTOM********/
+footer{
+  position:absolute;
+  margin-top: 100%;
+  background: #e0e0e0;
+  width: 100%;
+}
+
+footer a {
+	padding: 100px;
+	color: #e0e0e0;
+}
+
+footer a.zen-github::before {
+	content:url("GitHub-Mark-32px.png");
+}
+
+footer a.zen-validate-html::before {
+
+	content: url("https://www.w3.org/html/logo/downloads/HTML5_Badge_32.png");
+}
+
+footer a.zen-validate-css::before {
+	content: url("HTML5_Styling_32.png");
+}
+
+footer a.zen-license::before {
+	content: url("cc.large.png");
+}
+
+footer a.zen-accessibility::before {
+	content: url("AccessibleIconVector-1.png");
+}
+/******************Making the new footer and links*********************/
+
+.design-selection, .design-archives, .zen-resources {
+  display: inline-block;
+  justify-content:center;
+  text-align: center;
+  margin-top:60%; /* Set in % because div was moved from original place in html. Px wouldn't affect the div enough. */
+  position: relative; /*Setting the margins in % will clash with mobile screen size*/
+  vertical-align:top;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+/* Footer links*/
+.sidebar a{
+  color: black;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+nav ul, .zen-resources ul{
+  list-style-type: none;
+}
+
+.design-selection{
+  width: 28%;
+}
+
+.design-archives{
+  width:35%;
+}
+
+.zen-resources{
+  width:31%;
+}
