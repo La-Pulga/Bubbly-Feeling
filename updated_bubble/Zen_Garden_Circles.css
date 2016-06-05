@@ -1,0 +1,253 @@
+
+@font-face {
+	font-family: 'JuliusSansOne';
+	src: url(JuliusSansOne-Regular.ttf);
+}
+
+body {
+	width: 100%;
+	margin: auto;
+	background: radial-gradient(#faf8d7, #f3ef9b);
+	font-family: 'Libre Baskerville', sans-serif;
+}
+
+
+h2 {
+	text-align: center;
+	font-size: 1.6em;
+	display: inline-block;
+	margin-left: 25%;
+	font-family: 'JuliusSansOne', sans-serif;
+	font-style: italic;
+}
+
+
+h1 {
+	display: inline-block;
+	font-size: 1.2em;
+	font-family: 'JuliusSansOne', sans-serif;
+
+}
+
+h3 {
+	font-family: 'JuliusSansOne', sans-serif;
+}
+.summary {
+	text-align: justify;
+	position:absolute;
+	font-size: 0.6em;
+	text-indent: 0;
+	font-family: 'JuliusSansOne', sans-serif;
+}
+
+/*********************Article layout*********************/
+::-webkit-scrollbar {
+	display: none;
+}
+
+.requirements, .benefits h3 {
+	text-align: -webkit-center;
+}
+
+.preamble, .explanation, .benefits, .participation, .requirements {
+	transition:  all .8s ease-in-out;
+}
+
+.preamble, .explanation, .benefits, .participation, .requirements p {
+	font-size: 90%;
+}
+
+/**********************Hovering specs************************ */
+.requirements:hover, .explanation:hover, .participation:hover, .benefits:hover {
+  transform: rotate(360deg);
+  width: 300px;
+  height: 300px;
+  z-index: 99;
+}
+
+.requirements:hover, .explanation:hover, .participation:hover, .benefits:hover h3 {
+	text-align: center;
+	z-index: 99;
+}
+
+.requirements:hover{
+	position: absolute;
+	margin-left: 35%;
+	margin-top: 10em;
+}
+
+.benefits:hover{
+	padding: 20px 20px 10px 30px;
+}
+
+.explanation:hover {
+	padding: 20px 20px 10px 30px;
+}
+
+/*********************Front parge display ********************************* */
+
+.preamble {
+	display: inline-block;
+	position: absolute;
+	margin-left: 35%;
+	margin-top: 100px;
+	width: 23%;
+	background-repeat: no-repeat;
+	background-image: radial-gradient(#f0ec87, #eb9f5e);
+	background-size: 100%;
+	border-radius: 50%;
+	border: 3px solid #b86c2c;
+	padding: 50px 50px 40px 70px;
+	box-shadow: 5px 5px 5px #888888;
+}	
+
+.explanation {
+	display: inline-block;
+	position: absolute;
+	margin-left: 70%;
+	margin-top: -60px;
+	width: 15em;
+	height: 15em;
+	overflow: hidden;
+	overflow-y: scroll;
+	background-repeat: no-repeat;
+	background-image: radial-gradient(#b072f9, #552781);
+	background-size: 100%;
+	border-radius: 50%;
+	border: 3px solid #360570;
+	padding: 20px 30px 20px 40px;
+	box-shadow: 5px 5px 15px #888888;
+}
+
+.participation {
+	display: inline-block;
+	position: absolute;
+	margin-left: 17%;
+	margin-top: 40px;
+	overflow: hidden;
+	overflow-y: scroll;
+	width: 10em;
+	height: 10em;
+	overflow: hidden;
+	overflow-y: scroll;
+	background-repeat: no-repeat;
+	background-image: radial-gradient(#bcf972, #9DAD6A);
+	background-size: 100%;
+	border-radius: 50%;
+	border: 3px solid #78935A;
+	border-radius: 50%;
+	padding: 30px 25px 20px 50px;
+	box-shadow: 5px 5px 15px #888888;
+}
+
+
+.benefits {
+	display: inline-block;
+	position: absolute;
+	margin-left: 68%;
+	margin-top: 300px;
+	width: 20%;
+	width: 8em;
+	height: 8em;
+	overflow: hidden;
+	overflow-y: scroll;
+	background-repeat: no-repeat;
+	background-image: radial-gradient(#bcf972, #9DAD6A);
+	background-size: 100%;
+	border-radius: 50%;
+	border: 3px solid #78935A;
+	padding: 10px 20px 20px 30px;
+	box-shadow: 5px 5px 15px #888888;
+}
+
+.requirements {
+	display: inline-block;
+	position: absolute;
+	margin-top: 30%;
+	margin-left: 220px;
+	overflow: hidden;
+	overflow-y: scroll;
+	width: 13em;
+	height: 13em;
+	overflow: hidden;
+	overflow-y: scroll;
+	background-color: #f372f9; 
+	background-size: 100px 100px;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-image: radial-gradient(#f372f9, #A1285F);
+	background-size: 100%;
+	border: 3px solid #8B003F;
+	padding: 20px 20px 20px 30px;
+	box-shadow: 5px 5px 15px #888888;
+}
+
+
+/************FOOTER AT THE BOTTOM********/
+footer{
+  position:absolute;
+  margin-top: 100%;
+  background: #e0e0e0;
+  width: 100%;
+}
+
+footer a {
+	padding: 100px;
+	color: #e0e0e0;
+}
+
+footer a.zen-github::before {
+	content:url("GitHub-Mark-32px.png");
+}
+
+footer a.zen-validate-html::before {
+
+	content: url("https://www.w3.org/html/logo/downloads/HTML5_Badge_32.png");
+}
+
+footer a.zen-validate-css::before {
+	content: url("HTML5_Styling_32.png");
+}
+
+footer a.zen-license::before {
+	content: url("cc.large.png");
+}
+
+footer a.zen-accessibility::before {
+	content: url("AccessibleIconVector-1.png");
+}
+/******************Making the new footer and links*********************/
+
+.design-selection, .design-archives, .zen-resources {
+  display: inline-block;
+  justify-content:center;
+  text-align: center;
+  margin-top:60%; /* Set in % because div was moved from original place in html. Px wouldn't affect the div enough. */
+  position: relative; /*Setting the margins in % will clash with mobile screen size*/
+  vertical-align:top;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+/* Footer links*/
+.sidebar a{
+  color: black;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+nav ul, .zen-resources ul{
+  list-style-type: none;
+}
+
+.design-selection{
+  width: 28%;
+}
+
+.design-archives{
+  width:35%;
+}
+
+.zen-resources{
+  width:31%;
+}
